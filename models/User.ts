@@ -9,10 +9,10 @@ export default class User {
   private userID: string;
 
   constructor() {
-    (this.firstName = faker.person.firstName()),
-      (this.lastName = faker.person.lastName()),
-      (this.email = faker.internet.email()),
-      (this.password = "Abcd@123456");
+    this.firstName = faker.person.firstName();
+    this.lastName = faker.person.lastName();
+    this.email = faker.internet.email();
+    this.password = "Test1234";
   }
 
   getFirstName() {
