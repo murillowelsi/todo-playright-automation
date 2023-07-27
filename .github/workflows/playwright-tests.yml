@@ -17,7 +17,7 @@ jobs:
       - name: Run Playwright tests
         run: npx playwright test
 
-      - name: Get Allure history
+      - name: Get Allure History
         uses: actions/checkout@v2
         continue-on-error: true
         with:
