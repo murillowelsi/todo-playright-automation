@@ -3,6 +3,8 @@ import User from "../models/User";
 import SignupPage from "../pages/SignupPage";
 import TodoPage from "../pages/TodoPage";
 import NewTodoPage from "../pages/NewTodoPage";
+import UserApi from "../apis/UserApi";
+import TodoApi from "../apis/TodoApi";
 
 test("should be able to add a new todo", async ({ page, request, context }) => {
   const user = new User();

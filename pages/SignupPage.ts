@@ -53,6 +53,9 @@ export default class SignupPage {
     const firstName = responseBody.firstName;
     const userID = responseBody.userID;
 
+    user.setAccessToken(access_token);
+    user.setUserID(userID);
+
     await context.addCookies([
       {
         name: "access_token",
